@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hi.verkefni.vidmot.SpurningarController">
+
+   <HBox prefHeight="516.0" prefWidth="700.0">
+      <VBox.margin>
+         <Insets bottom="20.0" />
+      </VBox.margin>
+      <VBox prefHeight="259.0" prefWidth="227.0">
+         <opaqueInsets>
+            <Insets right="20.0" />
+         </opaqueInsets>
+         <HBox.margin>
+            <Insets right="20.0" />
+         </HBox.margin>
+         <ScrollPane prefHeight="250.0" prefWidth="250.0">
+            <VBox.margin>
+               <Insets bottom="20.0" />
+            </VBox.margin>
+         </ScrollPane>
+         <ScrollPane prefHeight="250.0" prefWidth="250.0" />
+      </VBox>
+      <Label prefHeight="27.0" prefWidth="423.0" text="Einhver texti">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets left="20.0" />
+         </opaqueInsets>
+      </Label>
+   </HBox>
+   <ButtonBar prefHeight="40.0" prefWidth="200.0">
+      <buttons>
+         <Button mnemonicParsing="false" text="Svara" onAction="#onSvar"/>
+         <Button mnemonicParsing="false" text="Til baka" onAction="#onVelkominn"/>
+         <Button mnemonicParsing="false" text="Hætta" onAction="#onKvedja"/>
+      </buttons>
+   </ButtonBar>
+</VBox>

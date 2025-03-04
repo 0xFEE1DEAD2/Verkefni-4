@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hi.verkefni.vidmot.KvedjaController">
+
+    <ButtonBar prefHeight="40.0" prefWidth="200.0">
+      <buttons>
+          <Button mnemonicParsing="false" onAction="#onHaetta" text="Hætta" />
+      </buttons>
+    </ButtonBar>
+</VBox>

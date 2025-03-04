@@ -1,4 +1,7 @@
 package hi.verkefni.vidmot;
 
-public class SvarDialogController {
+import javafx.scene.control.Dialog;
+
+public class SvarDialogController extends Dialog<String> {
+
 }
