@@ -8,10 +8,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Spurningar {
+
     private final ObservableList<String> flokkar = FXCollections.observableArrayList();
     private final Map<String, ObservableList<String>> spurningar = new HashMap<>();
     private final SimpleStringProperty fjoldiSvaradraSpurninga = new SimpleStringProperty("0");
 
+    /**
+     * Smiður til að upphafstilla flokka og spurningar.
+     */
     public Spurningar() {
         flokkar.add("Tæknispurningar"); // flokkar.get(0)
         flokkar.add("Færnispurningar"); // flokkar.get(1)
@@ -32,14 +36,30 @@ public class Spurningar {
         spurningar.put(flokkar.get(1), flokkur2); // Setja flokkur2 lista í færnispurningar.
     }
 
+    /**
+     * Skilar lista af spurningum.
+     *
+     * @param flokkur Heiti flokks
+     * @return Listi af spurningum
+     */
     public ObservableList<String> getSpurningalisti(String flokkur) {
         return spurningar.get(flokkur);
     }
 
+    /**
+     * Skilar lista af flokkum spurninga.
+     *
+     * @return Listi flokkar
+     */
     public ObservableList<String> getFlokkar() {
         return flokkar;
     }
 
+    /**
+     * Test cases
+     *
+     * @param args Test cases
+     */
     public static void main (String [] args) {
         Spurningar spurningar = new Spurningar();
         System.out.println (spurningar.getSpurningalisti("Færnispurningar").get(1));

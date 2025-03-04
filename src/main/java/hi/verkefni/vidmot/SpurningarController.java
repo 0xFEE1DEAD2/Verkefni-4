@@ -12,11 +12,17 @@ public class SpurningarController {
 
     }
 
+    /**
+     * Skiptir yfir í kveðjuskjá.
+     */
     @FXML
     private void onKvedja() {
         ViewSwitcher.switchTo(View.KVEDJA);
     }
 
+    /**
+     * Skiptir yfir í velkominn skjá.
+     */
     @FXML
     private void onVelkominn() {
         ViewSwitcher.switchTo(View.VELKOMINN);

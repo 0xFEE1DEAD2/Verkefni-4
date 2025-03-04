@@ -9,6 +9,13 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class InterviewApplication extends Application {
+
+    /**
+     * Upphafstillir JavaFX og skiptir yfir í velkominn senu.
+     *
+     * @param stage Aðalsvið.
+     * @throws IOException Ef villa kemur upp við hleðslu á útliti.
+     */
     @Override
     public void start(Stage stage) throws IOException {
         var scene = new Scene(new Pane());
@@ -20,6 +27,11 @@ public class InterviewApplication extends Application {
         stage.show();
     }
 
+    /**
+     * Keyrir forrit.
+     *
+     * @param args Keyrsla.
+     */
     public static void main(String[] args) {
         launch();
     }
